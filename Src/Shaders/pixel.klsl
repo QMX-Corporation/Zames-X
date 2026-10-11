@@ -1,0 +1,20 @@
+# License-SPDX-Identifier: GPLv2
+
+
+struct PIXEL {
+    PIXEL *bit, 
+    int: PIXEL color = "color.ks"(color),
+    int: PIXEL realColor = "color.ks"(realColor)
+};
+
+INSTANCE: PIXEL = *bit(color, realColor) + color(&bit, realColor) + realColor(&bit, color) {
+    basicPixel
+}
+
+GLOBAL: basicPixel
+
+endINSTANCE;
+
+
+endFile;
+
