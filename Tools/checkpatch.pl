@@ -1,19 +1,9 @@
 #!/usr/bin/env perl
-# =================================================================------------
-# CheckerPach of Zames-X.
-# Zames-X Game Engine - Core Graphics Pipeline
-# Copyright (C) 2026 QMX Corporation. All rights reserved.
 
-# This program is free software; you can redistribute it and/or modify
-# it under the terms of the GNU General Public License as published by
-# the Free Software Foundation; version 2 of the License.
+# SPDX-License-Identifier: GPL-2.0-only
+# Zames-X Global Editor Configuration Matrix
+# Copyright (C) 2026 QMX Corporation
 
-# This program is distributed in the hope that it will be useful,
-# but WITHOUT ANY WARRANTY; without even the implied warranty of
-# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
-# GNU General Public License for more details.
-
-# =================================================================------------
 
 use strict;
 use warnings;

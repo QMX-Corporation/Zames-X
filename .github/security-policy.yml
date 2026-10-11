@@ -1,6 +1,6 @@
-# QMX Corporation - Security Enforcement Settings
+# SPDX-License-Identifier: GPL-2.0-only
+# Zames-X Global Editor Configuration Matrix
 # Copyright (C) 2026 QMX Corporation
-# License: GPLv2
 
 display_private_vulnerability_reporting: true
 accept_security_advisories: true
