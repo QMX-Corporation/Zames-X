@@ -1,0 +1,12 @@
+# QMX Corporation - Automatical Component Triage
+area:shaders:
+  - any: ['Src/Shaders/**/*']
+
+area:tools:
+  - any: ['Tools/**/*']
+
+architecture:core:
+  - any: ['Src/main.hc', 'Src/Renderer/**/*']
+
+governance:
+  - any: ['.github/**/*', '*.md']

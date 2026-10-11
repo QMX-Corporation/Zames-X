@@ -1,0 +1,6 @@
+# QMX Corporation CODEOWNERS
+# Sovereign architecture ownership
+
+*                      @dev12124
+/Src/Shaders/          @dev12124
+/Tools/                @dev12124
