@@ -82,11 +82,15 @@ referencing the value realColor of color.ks in the realColor of the pixel.klsl.
 ```text
 Zames-X  # Repository 
       | .devcontainer # Docker and Container
+            | devcontainer.json
+            | DockerFile
       | .github # Github Actions, PRs, Issues....
             | ISSUES_TEMPLATE
                    | bug_report.md
                    | feature_request.md
-        pull_request_template.md
+            | workflows
+                 | syntax-check.yml
+            pull_request_template.md
         | Src # The Main Package
             | Class # The Path of all Class readed
             | Objects # The Path of all Objects readed
@@ -96,15 +100,19 @@ Zames-X  # Repository
             | Shaders # Customized Shaders
                     | color.ks
                     | pixel.klsl
-            | main.hc 
-        CHANGELOG.md # ChangeLogs
-        CONTRIBUTING.md # Contributing!
-        CONTRIBUTORS.md # All Contributors!
-        GOVERNANCE.md # BDFL
-        README.md # The File on you is read! ._?
-        ROADMAP.md # RoadMap
-        SECURITY.md # Politics Security 
-        SUPPORT.md # Politics Support
+            | main.hc
+        | Tools # Tools
+              | checkpatch.pl 
+        | .gitattributes
+        | .gitignore
+        | CHANGELOG.md # ChangeLogs
+        | CONTRIBUTING.md # Contributing!
+        | CONTRIBUTORS.md # All Contributors!
+        | GOVERNANCE.md # BDFL
+        | README.md # The File on you is read! ._?
+        | ROADMAP.md # RoadMap
+        | SECURITY.md # Politics Security 
+        | SUPPORT.md # Politics Support
 ```
 
 ---
