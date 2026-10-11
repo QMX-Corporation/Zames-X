@@ -1,0 +1,29 @@
+# QMX Corporation - Commit Message Enforcement Matrix
+# Copyright (C) 2026 QMX Corporation
+# License: GPLv2
+
+name: Commit Syntax Guard
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+jobs:
+  check-commit-syntax:
+    name: Validate Conventional Commit Formatting
+    runs-on: ubuntu-latest
+    steps:
+    - name: Audit Pull Request Commit Title
+      uses: amannn/action-semantic-pull-request@v5
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        types: |
+          feat
+          fix
+          docs
+          style
+          refactor
+          perf
+          test
+          chore
