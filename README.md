@@ -80,41 +80,49 @@ referencing the value realColor of color.ks in the realColor of the pixel.klsl.
 
 ## STRUCTURE FOLDERS
 ```text
-Zames-X  # Repository 
-      | .devcontainer # Docker and Container
-            | devcontainer.json
-            | DockerFile
-      | .github # Github Actions, PRs, Issues....
-            | ISSUES_TEMPLATE
-                   | bug_report.md
-                   | feature_request.md
-            | workflows
-                 | syntax-check.yml
-            pull_request_template.md
-        | Src # The Main Package
-            | Class # The Path of all Class readed
-            | Objects # The Path of all Objects readed
-            | Properties # All Properties obtained
-            | Renderer # The Engine of Render!
-                     ! renderer.hc
-            | Shaders # Customized Shaders
-                    | color.ks
-                    | pixel.klsl
-            | main.hc
-        | Tools # Tools
-              | checkpatch.pl 
-        | .gitattributes
-        | .gitignore
-        | CHANGELOG.md # ChangeLogs
-        | CONTRIBUTING.md # Contributing!
-        | CONTRIBUTORS.md # All Contributors!
-        | GOVERNANCE.md # BDFL
-        | README.md # The File on you is read! ._?
-        | ROADMAP.md # RoadMap
-        | SECURITY.md # Politics Security 
-        | SUPPORT.md # Politics Support
-```
-
+Zames-X/
+├── .devcontainer/
+│   ├── devcontainer.json
+│   └── Dockerfile
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   └── feature_request.md
+│   ├── workflows/
+│   │   ├── labeler.yml
+│   │   └── syntax-check.yml
+│   ├── CODEOWNERS
+│   ├── DEPENDENCIES.md
+│   ├── pull_request_template.md
+│   └── security-policy.yml
+├── Src/
+│   ├── Class/
+│   │   └── .gitkeep
+│   ├── Objects/
+│   │   └── .gitkeep
+│   ├── Properties/
+│   │   └── .gitkeep
+│   ├── Renderer/
+│   │   └── renderer.hc
+│   ├── Shaders/
+│   │   ├── color.ks
+│   │   └── pixel.klsl
+│   └── main.hc
+├── Tools/
+│   └── checkpatch.pl
+├── .editorconfig
+├── .gitattributes
+├── .gitignore
+├── CHANGELOG.md
+├── CONTRIBUTING.md
+├── CONTRIBUTORS.md
+├── GOVERNANCE.md
+├── LICENSE
+├── MAINTAINERS
+├── README.md
+├── ROADMAP.md
+├── SECURITY.md
+└── SUPPORT.md
 ---
 
 ## LICENSE
