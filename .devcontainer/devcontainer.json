@@ -1,0 +1,25 @@
+{
+    "name": "Zames-X HolyC Development Environment",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-azuretools.vscode-docker",
+                "yzhang.markdown-all-in-one"
+            ],
+            "settings": {
+                "files.eol": "\n",
+                "files.associations": {
+                    "*.hc": "c",
+                    "*.ks": "cpp",
+                    "*.klsl": "cpp"
+                }
+            }
+        }
+    },
+    "postCreateCommand": "echo '[QMX-Ready] Container initialized. Running initial syntax audit...' && perl Tools/checkpatch.pl Src/Shaders/color.ks || true",
+    "remoteUser": "root"
+}

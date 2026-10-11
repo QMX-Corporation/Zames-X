@@ -1,0 +1,25 @@
+# Zames-X GitIgnore Specifications
+# Copyright (C) 2026 QMX Corporation
+
+# 1. Editor & OS Metadata
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.DS_Store
+Thumbs.db
+
+# 2. Compiler Outputs & Volatile Memory Dumps
+*.o
+*.obj
+*.bin
+*.iso
+*.img
+*.snapshot
+*.dump
+*.log
+
+# 3. Local Runtime Traces
+Tools/*.tmp

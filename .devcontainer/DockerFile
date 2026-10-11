@@ -1,0 +1,20 @@
+# Zames-X DevContainer Dockerfile
+# Copyright (C) 2026 QMX Corporation
+# License: GPLv2
+
+FROM ubuntu:24.04
+
+# Prevent interactive prompts during package installation
+ENV DEBIAN_FRONTEND=noninteractive
+
+# Install core development tools, Perl, and ANSI color modules for checkpatch
+RUN apt-get update && apt-get install -y \
+    build-essential \
+    perl \
+    libterm-ansicolor-perl \
+    git \
+    curl \
+    && apt-get clean && rm -rf /var/lib/apt/lists/*
+
+# Set the default shell to bash
+ENV SHELL=/bin/bash

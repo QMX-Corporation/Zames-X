@@ -1,0 +1,44 @@
+# QMX Corporation CI/CD Automation Matrix
+# Copyright (C) 2026 QMX Corporation
+# License: GPLv2
+
+name: Zames-X Code Quality Enforcement
+
+on:
+  push:
+    branches: [ "main", "master" ]
+  pull_request:
+    branches: [ "main", "master" ]
+
+jobs:
+  audit-shaders:
+    name: Execute Low-Level Syntax Check
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Inject Source Code Matrix
+      uses: actions/checkout@v4
+
+    - name: Setup Perl Runtime Environment
+      uses: shogo82148/actions-setup-perl@v1
+      with:
+        perl-version: '5.38'
+
+    - name: Install ANSI Color Support Terminal Modules
+      run: cpanm --notest Term::ANSIColor
+
+    - name: Run Checkpatch Script Over Color Shader
+      run: |
+        if [ -f Src/Shaders/color.ks ]; then
+          perl Tools/checkpatch.pl Src/Shaders/color.ks
+        else
+          echo "Warning: color.ks not found yet, skipping check."
+        fi
+
+    - name: Run Checkpatch Script Over Pixel Shader
+      run: |
+        if [ -f Src/Shaders/pixel.klsl ]; then
+          perl Tools/checkpatch.pl Src/Shaders/pixel.klsl
+        else
+          echo "Warning: pixel.klsl not found yet, skipping check."
+        fi

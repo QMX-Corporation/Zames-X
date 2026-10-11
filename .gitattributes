@@ -1,2 +1,32 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# Zames-X GitAttributes Configuration
+# Copyright (C) 2026 QMX Corporation
+# License: GPLv2
+
+# -----------------------------------------------------------------------------
+# 1. Enforce Strict LF Line Endings for Low-Level/Multiplatform Execution
+# -----------------------------------------------------------------------------
+* text=auto eol=lf
+
+# Force source files to always use Unix-style Line Feed (LF)
+*.hc text eol=lf
+*.ks text eol=lf
+*.klsl text eol=lf
+*.md text eol=lf
+
+# -----------------------------------------------------------------------------
+# 2. Map Custom Languages and Shaders to High-Level Syntax Highlighting
+# -----------------------------------------------------------------------------
+# Treat HolyC (.hc) files as C files for perfect GitHub coloring and stats
+*.hc linguist-language=C
+
+# Treat custom color and pixel shader engines as C/C++ style grammar
+*.ks linguist-language=C++
+*.klsl linguist-language=C++
+
+# -----------------------------------------------------------------------------
+# 3. Binary and Compression Management (TempleOS Compatibility)
+# -----------------------------------------------------------------------------
+# Treat TempleOS auto-compressed HolyC files as pure binaries
+*.hc.z binary
+*.z binary
+*.dat binary
