@@ -1,0 +1,38 @@
+Maintainer: dev12124, João Guilherme da Silva Freitas Lima <joaoanandalima@gmail.com>
+About: Maintainer, "Copyright of all Reviewers of QMX Corporation, include me. 2026 GPLv2"
+
+COMPLETE REPOSITORY = "https://github.com/QMX-Corporation/Zames-X":
+      
+    # Politic, Azure, Security, Dev Container, Docs
+    DOCS + POLITIC + AZURE + SECURITY + DEV CONTAINER:
+        # Authorizeds 
+        R: Ard Biesheuvel <ardb@kernel.org>
+        R: Steven Rostedt <rostedt@goodmis.org>
+        # Me
+        R-Supreme: João Guilherme da Silva Freitas Lima <joaoanandalima@gmail.com>
+        # Signed 
+        Assigned-Off-by: All R + R-Supreme.
+    
+    # RENDERER + SHADERS
+    RENDERER + SHADERS:
+          # Authorizeds
+          R: Ivan Sutherland <ivan.sutherland@gmail.com>
+          R: Steve Jobs <sjobs@apple.com>
+          # Me
+          R-Supreme: João Guilherme da Silva Freitas Lima <joaoanandalima@gmail.com>
+          # Signed
+          Assigned-Off-by: All R + R-Supreme.
+
+    # MAIN
+    MAIN:
+        # Authorizeds
+        R: Linus Torvalds <torvalds@linux-foundation.org>
+        R: Steve Rostedt <rostedt@goodmis.org>
+        R: Ard Biesheuvel <arb@kernel.org>
+        R: Steve Jobs <sjobs@apple.com>
+        R: Ivan Sutherland <ivan.sutherland@gmail.com>
+        R: Prashant Singh <singhpr@juniper.net>
+        # Me
+        R-Supreme: João Guilherme da Silva Freitas Lima <joaoanandalima@gmail.com>
+        # Signed
+        Assigned-Off-by: All R + R-Supreme.

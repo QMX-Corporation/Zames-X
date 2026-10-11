@@ -1,0 +1,11 @@
+# QMX Corporation - Security Enforcement Settings
+# Copyright (C) 2026 QMX Corporation
+# License: GPLv2
+
+display_private_vulnerability_reporting: true
+accept_security_advisories: true
+
+contact_links:
+  - name: "QMX Security Private Dispatch"
+    url: "https://github.com/QMX-Corporation/Zames-X"
+    about: "Authorized portal for corporate or independent low-level researchers."
